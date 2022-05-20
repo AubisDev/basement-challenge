@@ -21,7 +21,7 @@ const Home: NextPage = () => {
     for (let index in productCopy) {
       if (productCopy[index].id == item.id) {
         found = true;
-        if (productCopy[index].quantity <= 10) {
+        if (productCopy[index].quantity < 10) {
           productCopy[index].quantity += 1;
           productCopy[index].total = productCopy[index].quantity * productCopy[index].price;
           setCart(productCopy);
@@ -98,7 +98,7 @@ const Home: NextPage = () => {
         <Image alt="Footer" src={footer} />
       </footer>
       {cartMenuOpen && (
-        <div className="w-full sm:w-2/5 h-auto z-50 absolute sm:right-4">
+        <div className="w-full sm:w-2/5 h-full sm:h-auto z-50 bg-black absolute sm:right-4 ">
           <Cart
             cart={cart}
             handleAddQuantity={handleAddQuantity}
