@@ -1,0 +1,29 @@
+{
+    "products":[
+        {
+            "id":1,
+            "item": "Black t-shirt",
+            "price": 7.95,
+            "image": "/../public/products/shirt.png",
+            "quantity": 1,
+            "total": 0
+        },
+        {
+            "id":2,
+            "item": "Black hoodie",
+            "price": 13,
+            "image": "/../public/products/hoodie.png",
+            "quantity": 1,
+            "total": 0
+        },
+        {
+            "id":3,
+            "item": "Black cap",
+            "price": 23,
+            "image": "/../public/products/cap.png",
+            "quantity": 1,
+            "total": 0
+        }
+    ]
+}
+
